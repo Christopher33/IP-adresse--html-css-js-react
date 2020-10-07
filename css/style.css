@@ -1,1 +1,6 @@
-#mapid { height: 180px; }
+#mapid { height: 500px; }
+
+.leaflet-marker-icon{
+    margin-left: -23px;
+    margin-top: -56px;
+}
