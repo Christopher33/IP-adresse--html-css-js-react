@@ -11,33 +11,55 @@
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
-  <link href="css/style.css" rel="stylesheet">
-  <title>Frontend Mentor | IP Address Tracker</title>
+   <link href="css/style.css" rel="stylesheet">
+   <link href="css/resp.css" rel="stylesheet">
+   <title>Frontend Mentor | IP Address Tracker</title>
 </head>
 
 <body>
 
-  <h1>IP Adresse Tracker</h1>
+  <header>
+    <img class="resp" src="images/pattern-bg.png" alt="background image">
 
-  <form id="ipForm">
-    <input placeholder="Search for any IP adresse or domain" id="search" >
-    <button type="submit">></button>
-  </form>
+    <div class="nav">
+      <h1>IP Adresse Tracker</h1>
+      <form id="ipForm">
+        <input placeholder="Search for any IP adresse or domain" id="search" >
+        <button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
+        </button>
+      </form>
+    </div>
+    
+  </header>
 
-  <div>
-    <span>IP Address</span>
-    <p class="ipAddress"></p>
+  <section class="info">
+    <div class="box">
+      <span>IP ADDRESS</span>
+      <p class="ipAddress"></p>
+    </div>
 
-    <span>Location</span>
-    <p id="location"></p>
+    <div class="bar"></div>
+    
+    <div class="box">
+      <span>LOCATION</span>
+      <p id="location"></p>
+    </div>
 
-    <span>Timezone</span>
-    <p id="timezone"></p>
+    <div class="bar"></div>
 
-    <span>ISP</span>
-    <p id="isp"></p>
+    <div class="box">
+      <span>TIMEZONE</span>
+      <p id="timezone"></p>
+    </div>
 
-  </div>
+    <div class="bar"></div>
+
+    <div class="box">
+      <span>ISP</span>
+      <p id="isp"></p>
+    </div>
+  </section>
 
   <section>
     <div id="mapid"></div>

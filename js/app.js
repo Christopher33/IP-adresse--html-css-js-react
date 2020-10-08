@@ -9,7 +9,7 @@ const isp = document.getElementById("isp");
 
 let ipResult;
 let newIpResult;
-let data = '8.8.8.8';
+let data = '';
 let mymap;
 
 let persoIcon = L.icon({
